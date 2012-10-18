@@ -25,9 +25,9 @@ Required Modules installation and php.ini settings for running Symfony2,
     
     -> suhosin.executor.include.whitelist=”phar”
     -> date.timezone = UTC
-    -> short_open_tag = Off, 
-    -> magic_quotes_gpc = Off, 
-    -> register_globals = Off, 
+    -> short_open_tag = Off 
+    -> magic_quotes_gpc = Off 
+    -> register_globals = Off 
     -> session.autostart = Off
    
 
