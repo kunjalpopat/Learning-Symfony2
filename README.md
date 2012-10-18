@@ -32,7 +32,8 @@ Required Modules installation and php.ini settings for running Symfony2,
    
 => sudo apt-get install libssl-doc [If not installed in System then install]
 
-============== PROBLEM IN INSTALLATION THEN USE BELOW INSTRUCTIONS FOR THIS =================
+====== PROBLEM IN INSTALLATION THEN USE BELOW INSTRUCTIONS FOR THIS =======
+
 => sudo gedit /etc/apt/preferences
 
 and insert the following lines:
@@ -44,25 +45,29 @@ Pin: release a=precise*
 Pin-Priority: 2012
 
 Pin-Priority must be greater than 1000.
-==============================================================================================
+
+===========================================================================
 
 Then you may downgrade the offending applications with:
 
 => sudo apt-get dist-upgrade [if u want]
 
-Then you may install packages that complained about dependencies, like sudo apt-get install ia32-libs-multiarch, or sudo apt-get install ia32-libs.
+Then you may install packages that complained about dependencies,
 
 => sudo apt-get install libssl-doc
+
 => sudo apt-get install libicu-dev
+
 => sudo apt-get install php5-intl
 
-==================================== REMOVE THIS ============================================
+
+================== REMOVE THIS =================
 
 Finally, you should remove the file you just created:
 
 => sudo rm /etc/apt/preferences
 
-=============================================================================================
+================================================
 
 After you will Start your Symfony2 and see on URL: http://localhost/Symfony/web/config.php
 
